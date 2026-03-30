@@ -189,6 +189,31 @@ section {
   text-align: center;
 }
 
+.section__text__p1__anime {
+  font-size: 1.5rem;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #1a3c6e;
+  width: 0;
+  display: block;
+  margin: 0 auto;
+  
+  /* Animation : 10 étapes pour 10 caractères */
+  animation: 
+    typing 2s steps(9) forwards, 
+    blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to   { width: 9ch; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
 .section__text__p2 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
@@ -242,7 +267,7 @@ section {
 .btn-color-1,
 .btn-color-2:hover {
   background: rgb(53, 53, 53);
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .btn-color-1:hover {
